@@ -24,7 +24,16 @@ def scan_ports(host, start_port, end_port):
     return open_ports
 
 def main():
-    print("\tPort scan by linux")
+    print('''\033[0;35m\t
+    ____            _                         
+   |  _ \ ___  _ __| |_   ___  ___ __ _ _ __  
+   | |_) / _ \| '__| __| / __|/ __/ _` | '_ \ 
+   |  __/ (_) | |  | |_  \__ \ (_| (_| | | | |
+   |_|   \___/|_|   \__| |___/\___\__,_|_| |_|
+                                      
+                                      by linux        
+
+    \033[0m\n''')
     host = input("Enter the target host/IP address: ")
     start_port = int(input("Enter the starting port number: "))
     end_port = int(input("Enter the ending port number: "))
